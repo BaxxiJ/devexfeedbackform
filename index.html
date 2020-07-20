@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Joseph Baxter">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.3/examples/signin/">
+
+    <title>DevEx Feedback Form</title>
+    <link rel="shortcut icon" href="https://rover.redhat.com/apps/favicon.ico?v2" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class=container>
+        <h1 id="title" class="display-1">DevEx Workshop Feedback Form</h1>
+    </div>
+    
+    <div class="container">
+        <form action="/" method="POST">
+            <div class="form-section">
+                <div id="nameGroup" class= "form-group">
+                    <p><strong>Name:</strong></p>
+                    <input class="form-control" type="text" name="name"/>
+                </div>
+                <div id="qCompletedRadioGroup" class="form-group">
+                    <p><strong>How much of the lab did you complete?</strong></p>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="1">None</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qCompletedRadio" value=1>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qCompletedRadio" value=2>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qCompletedRadio" value=3>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qCompletedRadio" value=4>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qCompletedRadio" value=5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="5">All</label>
+                    </div>
+                </div>
+                <div id="qEngagingRadioGroup" class="form-group">
+                    <p><strong>How Engaging was the course?</strong></p>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="0">It put me to sleep</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qEngagingRadio" value=1>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qEngagingRadio" value=2>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qEngagingRadio" value=3>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qEngagingRadio" value=4>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qEngagingRadio" value=5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="5">Exciting</label>
+                    </div>
+                </div>
+                <div id="qLearnedRadioGroup" class="form-group">
+                    <p><strong>How much did you learn?</strong></p>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="0">Not a thing</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qLearnedRadio" value=1>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qLearnedRadio" value=2>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qLearnedRadio" value=3>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qLearnedRadio" value=4>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qLearnedRadio" value=5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="5">Tonnes</label>
+                    </div>
+                </div>
+                <div id="qRecommendRadio" class="form-group">
+                    <p><strong>Would you recommend this lab?</strong></p>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="0">No way</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qRecommendRadio" value=1>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qRecommendRadio" value=2>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qRecommendRadio" value=3>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qRecommendRadio" value=4>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qRecommendRadio" value=5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="5">Hell yeah!</label>
+                    </div>
+                </div>
+                <div id="qEaseOfUseRadioGroup" class="form-group">
+                    <p><strong>Rate the overall ease of use of the tasks you performed in this lab</strong></p>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="0">Very difficult to use</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qEaseOfUseRadio" value=1>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qEaseOfUseRadio" value=2>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qEaseOfUseRadio" value=3>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qEaseOfUseRadio" value=4>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qEaseOfUseRadio" value=5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="5">Very easy to use</label>
+                    </div>
+                </div>
+                <div id="qFeaturesRadioGroup" class="form-group">
+                    <p><strong>How likely are you to use the features you used in the lab today?</strong></p>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="0">I'll never use this</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qFeaturesRadio" value=1>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qFeaturesRadio" value=2>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qFeaturesRadio" value=3>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qFeaturesRadio" value=4>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qFeaturesRadio" value=5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="5">I can't wait to try it</label>
+                    </div>
+                </div>
+                <div id="qFeaturesTextGroup" class= "form-group">
+                <p><strong>Do you have any feedback on these features?</strong></p>
+                    <input class="form-control" type="text" name="qFeaturesText"/>
+                </div>
+            </div>
+            <div class="form-section">
+                <div id="qUserRoleRadioGroup" class="form-group">
+                    <p><strong>How would you best decribe your role? </strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="qUserRoleRadio" value="AppOwner">
+                        <label class="form-check-label" for="AppOwner">Application Owner</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="qUserRoleRadio" value="Administrator">
+                        <label class="form-check-label" for="Administrator">Cluster Admin/ System Admin</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="qUserRoleRadio" value="Developer">
+                        <label class="form-check-label" for="Developer">Developer</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="qUserRoleRadio" value="Operator">
+                        <label class="form-check-label" for="Operator">Operator</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="qUserRoleRadio" value="Architect">
+                        <label class="form-check-label" for="Architect">System Architect</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="qUserRoleRadio" value="Other">
+                        <label class="form-check-label" for="Other">Other</label>
+                    </div>
+                </div>
+        
+
+                <div id="qExperienceRadioGroup" class="form-group">
+                    <p><strong>Please indicate your amount of experience with openshift</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="qExperienceRadio" value="newbie">
+                        <label class="form-check-label" for="newbie">Newbie</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="qExperienceRadio" value="6mo+">
+                        <label class="form-check-label" for="6mo+">6 Months or more</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="qExperienceRadio" value="1-2y">
+                        <label class="form-check-label" for="1-2y">1-2 years</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="qExperienceRadio" value="2y+">
+                        <label class="form-check-label" for="2y+">More than 2 years</label>
+                    </div>
+                </div>
+
+                <div id=qExpOcpGroup class="form-group">
+                    <p><strong>What versions of openshift do you have experience with?</strong></p>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <p>Have not used</p>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <p>Little experience</p>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <p>Some experience</p>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <p>Lots of experience</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label class="form-check-label" for="qExpOcp3.9">3.9 or earlier</label>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.9" value=1>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.9" value=2>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.9" value=3>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.9" value=4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label class="form-check-label" for="qExpOcp3.10">3.10</label>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.10" value=1>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.10" value=2>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.10" value=3>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.10" value=4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label class="form-check-label" for="qExpOcp3.11">3.11</label>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.11" value=1>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.11" value=2>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.11" value=3>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp3.11" value=4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label class="form-check-label" for="qExpOcp4.0">4.0</label>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.0" value=1>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.0" value=2>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.0" value=3>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.0" value=4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label class="form-check-label" for="qExpOcp4.1">4.1</label>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.1" value=1>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.1" value=2>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.1" value=3>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.1" value=4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label class="form-check-label" for="qExpOcp4.2">4.2</label>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.2" value=1>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.3" value=2>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.3" value=3>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.3" value=4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label class="form-check-label" for="qExpOcp4.0">4.4</label>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.4" value=1>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.4" value=2>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.4" value=3>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-1">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="qExpOcp4.4" value=4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="qWorkshopFormatRadioGroup" class="form-group">
+                    <p><strong>Did you like the format of these workshops?</strong></p>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="0">Hated it</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qWorkshopFormatRadio" value=1>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qWorkshopFormatRadio" value=2>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qWorkshopFormatRadio" value=3>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qWorkshopFormatRadio" value=4>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qWorkshopFormatRadio" value=5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="5">Loved it</label>
+                    </div>
+                </div>
+                <div id="qSimilarWorkshopRadioGroup" class="form-group">
+                    <p><strong>Would you attend another workshop like this in future?</strong></p>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="0">No way</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qSimilarWorkshopRadio" value=1>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qSimilarWorkshopRadio" value=2>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qSimilarWorkshopRadio" value=3>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qSimilarWorkshopRadio" value=4>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="qSimilarWorkshopRadio" value=5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="5">Hell yeah!</label>
+                    </div>
+                </div>
+                <div id="qImprovementsTextGroup" class= "form-group">
+                    <p><strong>What could we do to improve the workshop?</strong></p>
+                    <input class="form-control" type="text" name="qImprovementsText"/>
+                </div>
+                <div id="qAdditionalCommentsText" class= "form-group">
+                    <p><strong>What could we do to improve the workshop?</strong></p>
+                    <input class="form-control" type="text" name="qAdditionalCommentsText"/>
+                </div>
+                <input class="btn btn-primary" type="submit"/>
+        </div>
+        </form> 
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  </body>
+</html>
