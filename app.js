@@ -6,6 +6,9 @@ const { response } = require('express');
 
 const app = express();
 
+const port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
+const ip = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+
 // serve static files (i.e CSS) from foilder "public"
 app.use(express.static("public")); 
 
@@ -62,7 +65,7 @@ app.post("/failure", function(req, res) {
     res.redirect("/");
 });
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(port, ip, function() {
     console.log("server is running on port 3000");
     
 });
