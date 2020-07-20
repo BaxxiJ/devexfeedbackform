@@ -14,9 +14,12 @@
     <link rel="shortcut icon" href="https://rover.redhat.com/apps/favicon.ico?v2" type="image/x-icon">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
-
   </head>
 
   <body>
@@ -208,6 +211,8 @@
                         <label class="form-check-label" for="Other">Other</label>
                     </div>
                 </div>
+        
+
                 <div id="qExperienceRadioGroup" class="form-group">
                     <p><strong>Please indicate your amount of experience with openshift</strong></p>
                     <div class="form-check">
@@ -227,6 +232,7 @@
                         <label class="form-check-label" for="2y+">More than 2 years</label>
                     </div>
                 </div>
+
                 <div id=qExpOcpGroup class="form-group">
                     <p><strong>What versions of openshift do you have experience with?</strong></p>
                     <div class="form-row">
@@ -421,6 +427,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div id="qWorkshopFormatRadioGroup" class="form-group">
                     <p><strong>Did you like the format of these workshops?</strong></p>
                     <div class="form-check form-check-inline">
@@ -480,6 +487,10 @@
                 <input class="btn btn-primary" type="submit"/>
         </div>
         </form> 
-    </div>
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
 </html>
